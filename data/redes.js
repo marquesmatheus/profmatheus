@@ -1,5 +1,6 @@
 window.dadosRedes = {
   title: 'Redes de Computadores',
+  materiaisUrl: '/profmatheus/materiais/redes-de-computadores.html',
   aulasPorSemana: '2',
   totalAulas: 40,
   semanas: [

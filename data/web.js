@@ -1,5 +1,6 @@
 window.dadosWeb = {
   title: 'Desenvolvimento Web',
+  materiaisUrl: '/profmatheus/materiais/desenvolvimento-web.html',
   aulasPorSemana: '3',
   totalAulas: 60,
   stack: 'TypeScript + React',

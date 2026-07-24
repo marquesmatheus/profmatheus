@@ -1,5 +1,6 @@
 window.dadosSO = {
   title: 'Sistemas Operacionais',
+  materiaisUrl: '/profmatheus/materiais/sistemas-operacionais.html',
   aulasPorSemana: '3',
   totalAulas: 60,
   semanas: [

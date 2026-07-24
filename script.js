@@ -20,7 +20,7 @@ function renderDisciplina(data) {
 
     <div class="disc-nav">
       <a href="/profmatheus/" class="back">&#8592; Inicio</a>
-      <a href="/profmatheus/materiais/" style="background:var(--border-light);color:var(--text-secondary)">&#128206; Materiais</a>
+      <a href="${data.materiaisUrl || '/profmatheus/materiais/'}" style="background:var(--border-light);color:var(--text-secondary)">&#128206; Materiais</a>
     </div>
 
     <div class="search-box">

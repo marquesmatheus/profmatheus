@@ -1,5 +1,6 @@
 window.dadosMobile = {
   title: 'Experiencia Aplicada em Analise e Desenvolvimento Movel',
+  materiaisUrl: '/profmatheus/materiais/mobile.html',
   aulasPorSemana: '2',
   totalAulas: 40,
   stack: 'Flutter & Dart',
