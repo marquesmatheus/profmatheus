@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 01 - Plataformas Móveis - Mobile</title>
+  <link rel="stylesheet" href="/profmatheus/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/profmatheus/">Prof. Matheus</a></h1>
+      <nav>
+        <a href="/profmatheus/">Início</a>
+        <a href="/profmatheus/disciplinas/sistemas-operacionais/">Sistemas Operacionais</a>
+        <a href="/profmatheus/disciplinas/redes-de-computadores/">Redes</a>
+        <a href="/profmatheus/disciplinas/desenvolvimento-web/">Web</a>
+        <a href="/profmatheus/disciplinas/mobile/">Mobile</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container aula-content">
+    <div class="breadcrumb">
+      <a href="/profmatheus/">Início</a> /
+      <a href="/profmatheus/disciplinas/mobile/">Desenvolvimento Móvel</a> /
+      Aula 01
+    </div>
+
+    <div class="page-header">
+      <h2>Aula 01: Plataformas Móveis e Ecossistema</h2>
+      <div class="info"><span>&#9200; 50 min</span></div>
+    </div>
+
+    <h2>O Mercado Mobile</h2>
+    <p>O desenvolvimento mobile é um dos maiores mercados de tecnologia. Dados atuais:</p>
+    <ul>
+      <li>Mais de 6,5 bilhões de smartphones no mundo</li>
+      <li>Google Play: ~3,5 milhões de apps</li>
+      <li>Apple App Store: ~1,6 milhão de apps</li>
+      <li>Brasil: 1 smartphone por habitante (mais de 240 milhões)</li>
+    </ul>
+
+    <h2>Plataformas Nativas</h2>
+
+    <h3>Android</h3>
+    <ul>
+      <li><strong>Linguagem:</strong> Kotlin (oficial), Java</li>
+      <li><strong>IDE:</strong> Android Studio</li>
+      <li><strong>Kernel:</strong> Linux modificado</li>
+      <li><strong>Runtime:</strong> ART (Android Runtime)</li>
+      <li><strong>Publish:</strong> Google Play Store</li>
+    </ul>
+
+    <h3>iOS</h3>
+    <ul>
+      <li><strong>Linguagem:</strong> Swift (oficial), Objective-C</li>
+      <li><strong>IDE:</strong> Xcode (exclusivo macOS)</li>
+      <li><strong>Kernel:</strong> XNU (híbrido)</li>
+      <li><strong>Publish:</strong> Apple App Store</li>
+    </ul>
+
+    <h2>Desenvolvimento Cross-Platform</h2>
+    <p>Alternativa ao desenvolvimento nativo — escreve uma vez e publica em ambas plataformas:</p>
+
+    <h3>Flutter (Google)</h3>
+    <ul>
+      <li><strong>Linguagem:</strong> Dart</li>
+      <li><strong>Renderização:</strong> Skia (próprio motor gráfico)</li>
+      <li><strong>Performance:</strong> Próxima ao nativo (60/120 fps)</li>
+      <li><strong>Público-alvo:</strong> Android, iOS, Web, Desktop</li>
+    </ul>
+
+    <h3>React Native (Meta)</h3>
+    <ul>
+      <li><strong>Linguagem:</strong> JavaScript/TypeScript</li>
+      <li><strong>Renderização:</strong> Ponte nativa (bridge)</li>
+      <li><strong>Reutilização:</strong> Componentes React</li>
+    </ul>
+
+    <h3>Outras opções</h3>
+    <ul>
+      <li><strong>Xamarin</strong> (Microsoft) — C#</li>
+      <li><strong>Ionic/Cordova</strong> — WebView</li>
+      <li><strong>Kotlin Multiplatform</strong> — Código compartilhado + nativo</li>
+    </ul>
+
+    <h2>Por que Flutter?</h2>
+    <p>Neste curso usaremos Flutter porque:</p>
+    <ul>
+      <li>Performance nativa sem bridge</li>
+      <li>Hot Reload para desenvolvimento rápido</li>
+      <li>Widgets bonitos e customizáveis (Material Design + Cupertino)</li>
+      <li>Uma base de código para múltiplas plataformas</li>
+      <li>Comunidade crescente e forte suporte do Google</li>
+    </ul>
+
+    <h2>Instalação do Ambiente</h2>
+    <p>Para a próxima aula, instale:</p>
+    <ol>
+      <li>Flutter SDK: <a href="https://docs.flutter.dev/get-started/install" target="_blank">flutter.dev</a></li>
+      <li>Editor: VS Code ou Android Studio</li>
+      <li>Extensão Flutter no VS Code</li>
+      <li>Android Emulator ou dispositivo físico</li>
+    </ol>
+
+    <blockquote>
+      Rode <code>flutter doctor</code> no terminal para verificar se tudo está configurado corretamente.
+    </blockquote>
+
+    <h2>Exercícios</h2>
+    <ol>
+      <li>Explique a diferença entre desenvolvimento nativo e cross-platform.</li>
+      <li>Por que o Flutter não usa uma WebView para renderizar?</li>
+      <li>Pesquise: o que é Hot Reload e por que é útil?</li>
+      <li>Instale o Flutter e rode <code>flutter doctor</code> — anote quais itens estão OK e quais faltam.</li>
+    </ol>
+
+    <div class="nav-aulas">
+      <span></span>
+      <a href="/profmatheus/disciplinas/mobile/aulas/aula02.html">Próxima aula &rarr;</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">Prof. Matheus &mdash; Análise e Desenvolvimento de Sistemas</div>
+  </footer>
+</body>
+</html>

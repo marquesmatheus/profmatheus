@@ -1,3 +1,16 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary: #0f172a;
+  --accent: #f59e0b;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --success: #22c55e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,22 +18,333 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #f5f5f5;
-  color: #333;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-h1 {
-  font-size: 3rem;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+header {
+  background: var(--secondary);
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+header h1 {
+  font-size: 1.3rem;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: .3rem .7rem;
+  border-radius: 6px;
+  font-size: .85rem;
+  transition: background .2s, color .2s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,.1);
+  color: white;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 0 3rem;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: .5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Cards grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  border: 1px solid var(--border);
+  transition: transform .2s, box-shadow .2s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.card .badge {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  font-size: .75rem;
+  padding: .2rem .6rem;
+  border-radius: 20px;
+  margin-bottom: .7rem;
+  align-self: flex-start;
+}
+
+.card p {
+  color: var(--text-light);
+  font-size: .9rem;
+  flex: 1;
+}
+
+.card .aulas-count {
+  margin-top: 1rem;
+  font-size: .8rem;
+  color: var(--text-light);
+  border-top: 1px solid var(--border);
+  padding-top: .8rem;
+}
+
+/* Page header */
+.page-header {
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.page-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: .3rem;
+}
+
+.page-header .info {
+  color: var(--text-light);
+  font-size: .9rem;
+}
+
+.page-header .info span {
+  margin-right: 1.5rem;
+}
+
+/* Content sections */
+.semana {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.semana h3 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: .8rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.semana .aula {
+  padding: .6rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.semana .aula:last-child {
+  border-bottom: none;
+}
+
+.semana .aula .num {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  font-size: .75rem;
+  padding: .1rem .5rem;
+  border-radius: 4px;
+  margin-right: .5rem;
+  font-weight: 600;
+}
+
+.semana .aula .titulo {
+  font-weight: 500;
+}
+
+.semana .aula .desc {
+  font-size: .85rem;
+  color: var(--text-light);
+  margin-top: .2rem;
+  margin-left: 2.5rem;
+}
+
+/* Aula page */
+.aula-content {
+  max-width: 800px;
+}
+
+.aula-content h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 .5rem;
+  color: var(--secondary);
+}
+
+.aula-content h3 {
+  font-size: 1.15rem;
+  margin: 1.2rem 0 .4rem;
+  color: var(--primary);
+}
+
+.aula-content p {
+  margin-bottom: .8rem;
+}
+
+.aula-content ul, .aula-content ol {
+  margin: .5rem 0 1rem 1.5rem;
+}
+
+.aula-content li {
+  margin-bottom: .3rem;
+}
+
+.aula-content code {
+  background: #eef2ff;
+  padding: .15rem .4rem;
+  border-radius: 4px;
+  font-size: .85rem;
+  color: var(--primary);
+}
+
+.aula-content pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: .8rem 0;
+  font-size: .85rem;
+}
+
+.aula-content blockquote {
+  border-left: 4px solid var(--accent);
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  background: #fffbeb;
+  border-radius: 0 8px 8px 0;
+}
+
+.nav-aulas {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.nav-aulas a {
+  color: var(--primary);
+  text-decoration: none;
+  padding: .5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: .9rem;
+  transition: background .2s;
+}
+
+.nav-aulas a:hover {
+  background: #eef2ff;
+}
+
+/* Atividade page */
+.atividade-header {
+  background: #fef9c3;
+  border: 1px solid #facc15;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #854d0e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--text-light);
+  font-size: .85rem;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: .85rem;
+  color: var(--text-light);
   margin-bottom: 1rem;
 }
 
-p {
-  font-size: 1.2rem;
-  color: #666;
+.breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero h2 { font-size: 1.6rem; }
+  .grid { grid-template-columns: 1fr; }
 }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 01 - Como a Web Funciona - Web</title>
+  <link rel="stylesheet" href="/profmatheus/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/profmatheus/">Prof. Matheus</a></h1>
+      <nav>
+        <a href="/profmatheus/">Início</a>
+        <a href="/profmatheus/disciplinas/sistemas-operacionais/">Sistemas Operacionais</a>
+        <a href="/profmatheus/disciplinas/redes-de-computadores/">Redes</a>
+        <a href="/profmatheus/disciplinas/desenvolvimento-web/">Web</a>
+        <a href="/profmatheus/disciplinas/mobile/">Mobile</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container aula-content">
+    <div class="breadcrumb">
+      <a href="/profmatheus/">Início</a> /
+      <a href="/profmatheus/disciplinas/desenvolvimento-web/">Desenvolvimento Web</a> /
+      Aula 01
+    </div>
+
+    <div class="page-header">
+      <h2>Aula 01: Como a Web Funciona</h2>
+      <div class="info"><span>&#9200; 50 min</span></div>
+    </div>
+
+    <h2>O que é a Web?</h2>
+    <p>A World Wide Web (WWW) é um sistema de documentos interligados acessíveis via Internet. Criada por Tim Berners-Lee em 1989 no CERN. Importante: <strong>Web ≠ Internet</strong> — a Internet é a infraestrutura de redes; a Web é um serviço que roda sobre ela.</p>
+
+    <h2>Modelo Cliente-Servidor</h2>
+    <ul>
+      <li><strong>Cliente:</strong> Navegador (Chrome, Firefox, Edge) que faz requisições</li>
+      <li><strong>Servidor:</strong> Computador que hospeda e entrega os recursos (Apache, Nginx)</li>
+      <li>Cliente envia uma <strong>requisição HTTP</strong>, servidor retorna uma <strong>resposta HTTP</strong></li>
+    </ul>
+
+    <h2>Componentes de uma URL</h2>
+    <pre>https://www.exemplo.com:443/caminho/recurso?q=busca#secao</pre>
+    <ul>
+      <li><strong>Protocolo:</strong> https://</li>
+      <li><strong>Domínio:</strong> www.exemplo.com</li>
+      <li><strong>Porta:</strong> :443 (padrão HTTPS)</li>
+      <li><strong>Caminho:</strong> /caminho/recurso</li>
+      <li><strong>Query string:</strong> ?q=busca</li>
+      <li><strong>Fragmento:</strong> #secao</li>
+    </ul>
+
+    <h2>DNS (Domain Name System)</h2>
+    <p>Tradutor de nomes de domínio para endereços IP:</p>
+    <ol>
+      <li>Você digita "google.com" no navegador</li>
+      <li>O navegador consulta o DNS para resolver o IP</li>
+      <li>DNS retorna 142.250.218.78 (exemplo)</li>
+      <li>Navegador faz requisição HTTP para esse IP</li>
+    </ol>
+
+    <h2>HTTP</h2>
+    <p>Protocolo de transferência de hipertexto. Baseado em requisição e resposta.</p>
+
+    <h3>Métodos HTTP</h3>
+    <ul>
+      <li><strong>GET:</strong> Recuperar um recurso</li>
+      <li><strong>POST:</strong> Enviar dados para criar um recurso</li>
+      <li><strong>PUT:</strong> Atualizar um recurso</li>
+      <li><strong>DELETE:</strong> Remover um recurso</li>
+      <li><strong>PATCH:</strong> Atualização parcial</li>
+    </ul>
+
+    <h3>Códigos de Status</h3>
+    <ul>
+      <li><strong>1xx:</strong> Informativo (101 Switching Protocols)</li>
+      <li><strong>2xx:</strong> Sucesso (200 OK, 201 Created)</li>
+      <li><strong>3xx:</strong> Redirecionamento (301 Moved Permanently, 304 Not Modified)</li>
+      <li><strong>4xx:</strong> Erro do cliente (404 Not Found, 403 Forbidden)</li>
+      <li><strong>5xx:</strong> Erro do servidor (500 Internal Server Error)</li>
+    </ul>
+
+    <h2>O Caminho de uma Requisição</h2>
+    <ol>
+      <li>Usuário digita URL</li>
+      <li>DNS resolve o endereço IP</li>
+      <li>Conexão TCP é estabelecida (handshake de 3 vias)</li>
+      <li>Requisição HTTP é enviada ao servidor</li>
+      <li>Servidor processa e retorna a resposta</li>
+      <li>Navegador renderiza o HTML, CSS e executa JS</li>
+    </ol>
+
+    <blockquote>
+      <strong>Ferramenta:</strong> Abra o DevTools do navegador (F12) &rarr; aba Network. Recarregue a página e veja cada requisição feita.
+    </blockquote>
+
+    <h2>HTML, CSS e JavaScript</h2>
+    <ul>
+      <li><strong>HTML:</strong> Estrutura e conteúdo da página (esqueleto)</li>
+      <li><strong>CSS:</strong> Estilo e aparência (roupas)</li>
+      <li><strong>JavaScript:</strong> Comportamento e interação (movimento)</li>
+    </ul>
+
+    <h2>Exercícios</h2>
+    <ol>
+      <li>Qual a diferença entre Internet e Web?</li>
+      <li>Explique o papel do DNS.</li>
+      <li>Qual a diferença entre GET e POST?</li>
+      <li>Usando o DevTools, identifique 3 recursos carregados por uma página e seus códigos de status.</li>
+    </ol>
+
+    <div class="nav-aulas">
+      <span></span>
+      <a href="/profmatheus/disciplinas/desenvolvimento-web/aulas/aula02.html">Próxima aula &rarr;</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">Prof. Matheus &mdash; Análise e Desenvolvimento de Sistemas</div>
+  </footer>
+</body>
+</html>

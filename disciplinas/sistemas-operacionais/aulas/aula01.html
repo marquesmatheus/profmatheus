@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 01 - Conceitos Básicos - SO</title>
+  <link rel="stylesheet" href="/profmatheus/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/profmatheus/">Prof. Matheus</a></h1>
+      <nav>
+        <a href="/profmatheus/">Início</a>
+        <a href="/profmatheus/disciplinas/sistemas-operacionais/">Sistemas Operacionais</a>
+        <a href="/profmatheus/disciplinas/redes-de-computadores/">Redes</a>
+        <a href="/profmatheus/disciplinas/desenvolvimento-web/">Web</a>
+        <a href="/profmatheus/disciplinas/mobile/">Mobile</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container aula-content">
+    <div class="breadcrumb">
+      <a href="/profmatheus/">Início</a> /
+      <a href="/profmatheus/disciplinas/sistemas-operacionais/">Sistemas Operacionais</a> /
+      Aula 01
+    </div>
+
+    <div class="page-header">
+      <h2>Aula 01: Conceitos Básicos e Evolução dos SO</h2>
+      <div class="info"><span>&#9200; 50 min</span></div>
+    </div>
+
+    <h2>O que é um Sistema Operacional?</h2>
+    <p>Um Sistema Operacional (SO) é um software que atua como intermediário entre o hardware do computador e os programas do usuário. Seus principais objetivos são:</p>
+    <ul>
+      <li><strong>Gerenciar recursos</strong> do hardware (CPU, memória, disco, E/S)</li>
+      <li><strong>Prover uma interface</strong> para o usuário interagir com o computador</li>
+      <li><strong>Executar programas</strong> de forma eficiente e isolada</li>
+      <li><strong>Garantir segurança</strong> e proteção entre processos</li>
+    </ul>
+
+    <h3>Evolução Histórica</h3>
+
+    <h3>1ª Geração (1945-1955) — Válvulas</h3>
+    <p>Programação em painel de conectores e cartões perfurados. Sem SO. Operação manual com grande desperdício de tempo de CPU.</p>
+
+    <h3>2ª Geração (1955-1965) — Transistores e Batch</h3>
+    <p>Surgem os primeiros sistemas batch (lote). Programas eram perfurados em cartões e processados em lote sem interação do usuário. Surge o monitor residente (primeiro esboço de SO).</p>
+
+    <h3>3ª Geração (1965-1980) — Circuitos Integrados e Multiprogramação</h3>
+    <p>IBM System/360. Surge o conceito de <strong>multiprogramação</strong>: vários programas na memória ao mesmo tempo, enquanto um espera E/S, outro executa. Surgem também o <strong>tempo compartilhado</strong> (time-sharing) com o CTSS e Multics.</p>
+
+    <h3>4ª Geração (1980-hoje) — Microcomputadores</h3>
+    <p>Surgimento dos PCs. MS-DOS (Microsoft), MacOS (Apple). Interfaces gráficas (GUI). Unix se populariza (Linux, BSD). SO modernos: Windows, Linux, macOS, Android, iOS.</p>
+
+    <h2>Tipos de SO</h2>
+    <ul>
+      <li><strong>Batch:</strong> Processamento em lote, sem interação (ex: mainframes antigos)</li>
+      <li><strong>Tempo Compartilhado:</strong> CPU alterna entre usuários rapidamente (ex: Unix)</li>
+      <li><strong>Distribuído:</strong> Múltiplas máquinas trabalham como um sistema único</li>
+      <li><strong>Tempo Real:</strong> Resposta em tempo determinístico (ex: FreeRTOS)</li>
+      <li><strong>Embarcado:</strong> Dispositivos dedicados (ex: IoT, Arduino)</li>
+    </ul>
+
+    <h2>Componentes de um SO</h2>
+    <ul>
+      <li><strong>Kernel (núcleo):</strong> Parte central do SO, gerencia processos, memória, dispositivos</li>
+      <li><strong>Shell/Interface:</strong> CLI (terminal) ou GUI (ambiente gráfico)</li>
+      <li><strong>System calls:</strong> Interface entre programas e kernel</li>
+      <li><strong>Utilitários:</strong> Programas auxiliares (compiladores, editores, etc.)</li>
+    </ul>
+
+    <blockquote>
+      <strong>Para refletir:</strong> Qual a diferença entre um kernel monolítico e um micronúcleo?
+    </blockquote>
+
+    <h2>Exercícios</h2>
+    <ol>
+      <li>Explique a diferença entre processamento batch e tempo compartilhado.</li>
+      <li>Cite três funções principais de um sistema operacional.</li>
+      <li>Qual a importância da multiprogramação para a eficiência do sistema?</li>
+      <li>Pesquise: o que é um kernel híbrido? Dê exemplos.</li>
+    </ol>
+
+    <div class="nav-aulas">
+      <span></span>
+      <a href="/profmatheus/disciplinas/sistemas-operacionais/aulas/aula02.html">Próxima aula &rarr;</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">Prof. Matheus &mdash; Análise e Desenvolvimento de Sistemas</div>
+  </footer>
+</body>
+</html>

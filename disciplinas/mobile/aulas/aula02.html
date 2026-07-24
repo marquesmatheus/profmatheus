@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 02 - Introdução ao Flutter e Dart - Mobile</title>
+  <link rel="stylesheet" href="/profmatheus/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/profmatheus/">Prof. Matheus</a></h1>
+      <nav>
+        <a href="/profmatheus/">Início</a>
+        <a href="/profmatheus/disciplinas/sistemas-operacionais/">Sistemas Operacionais</a>
+        <a href="/profmatheus/disciplinas/redes-de-computadores/">Redes</a>
+        <a href="/profmatheus/disciplinas/desenvolvimento-web/">Web</a>
+        <a href="/profmatheus/disciplinas/mobile/">Mobile</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container aula-content">
+    <div class="breadcrumb">
+      <a href="/profmatheus/">Início</a> /
+      <a href="/profmatheus/disciplinas/mobile/">Desenvolvimento Móvel</a> /
+      Aula 02
+    </div>
+
+    <div class="page-header">
+      <h2>Aula 02: Introdução ao Flutter e Dart</h2>
+      <div class="info"><span>&#9200; 50 min</span></div>
+    </div>
+
+    <h2>O que é Flutter?</h2>
+    <p>Flutter é um framework de UI criado pelo Google para construir aplicações compiladas nativamente para múltiplas plataformas a partir de uma única base de código. Foi lançado em 2017 e usa a linguagem <strong>Dart</strong>.</p>
+
+    <h2>O que é Dart?</h2>
+    <p>Dart é uma linguagem de programação moderna, orientada a objetos e com sintaxe familiar a desenvolvedores Java/JavaScript/C#. Características:</p>
+    <ul>
+      <li>Compilada (AOT para produção, JIT para desenvolvimento)</li>
+      <li>Tipagem forte e opcional</li>
+      <li>Null safety (sem null pointer exceptions inesperadas)</li>
+      <li>Programação assíncrona nativa (async/await)</li>
+      <li>Garbage collector</li>
+    </ul>
+
+    <h2>Primeiro Projeto Flutter</h2>
+    <pre>flutter create meu_app
+cd meu_app
+flutter run</pre>
+
+    <p>Estrutura de pastas gerada:</p>
+    <ul>
+      <li><strong>lib/main.dart</strong> &mdash; Código principal da aplicação</li>
+      <li><strong>android/</strong> &mdash; Configuração do Android</li>
+      <li><strong>ios/</strong> &mdash; Configuração do iOS</li>
+      <li><strong>pubspec.yaml</strong> &mdash; Gerenciamento de dependências</li>
+    </ul>
+
+    <h2>Entendendo o main.dart</h2>
+    <pre>import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MeuApp());
+}
+
+class MeuApp extends StatelessWidget {
+  const MeuApp({super.key});
+
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Meu App')),
+        body: const Center(
+          child: Text('Olá, Flutter!'),
+        ),
+      ),
+    );
+  }
+}</pre>
+
+    <p>Explicação:</p>
+    <ul>
+      <li><code>void main()</code> &mdash; Ponto de entrada do app</li>
+      <li><code>runApp()</code> &mdash; Inicializa o Flutter com o widget raiz</li>
+      <li><code>StatelessWidget</code> &mdash; Widget imutável (não muda de estado)</li>
+      <li><code>MaterialApp</code> &mdash; Configuração do tema Material Design</li>
+      <li><code>Scaffold</code> &mdash; Estrutura visual básica de tela</li>
+      <li><code>AppBar</code> &mdash; Barra superior</li>
+      <li><code>Text</code> &mdash; Widget de texto</li>
+    </ul>
+
+    <h2>Executando e modificando</h2>
+    <p>Com o app rodando (<code>flutter run</code>), edite o texto no <code>main.dart</code> e salve. O <strong>Hot Reload</strong> atualizará o app instantaneamente sem perder o estado.</p>
+
+    <blockquote>
+      <strong>Dica:</strong> No terminal, pressione <code>r</code> para hot reload, <code>R</code> para hot restart.
+    </blockquote>
+
+    <h2>Exercícios</h2>
+    <ol>
+      <li>Crie um novo projeto Flutter com <code>flutter create</code>.</li>
+      <li>Modifique o texto "Olá, Flutter!" para seu nome.</li>
+      <li>Altere a cor do AppBar para azul (<code>Colors.blue</code>).</li>
+      <li>Adicione um ícone (Icon widget) abaixo do texto.</li>
+    </ol>
+
+    <div class="nav-aulas">
+      <a href="/profmatheus/disciplinas/mobile/aulas/aula01.html">&larr; Aula anterior</a>
+      <span></span>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">Prof. Matheus &mdash; Análise e Desenvolvimento de Sistemas</div>
+  </footer>
+</body>
+</html>

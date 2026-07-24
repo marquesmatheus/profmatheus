@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 02 - Estrutura de Sistemas Computacionais - SO</title>
+  <link rel="stylesheet" href="/profmatheus/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/profmatheus/">Prof. Matheus</a></h1>
+      <nav>
+        <a href="/profmatheus/">Início</a>
+        <a href="/profmatheus/disciplinas/sistemas-operacionais/">Sistemas Operacionais</a>
+        <a href="/profmatheus/disciplinas/redes-de-computadores/">Redes</a>
+        <a href="/profmatheus/disciplinas/desenvolvimento-web/">Web</a>
+        <a href="/profmatheus/disciplinas/mobile/">Mobile</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container aula-content">
+    <div class="breadcrumb">
+      <a href="/profmatheus/">Início</a> /
+      <a href="/profmatheus/disciplinas/sistemas-operacionais/">Sistemas Operacionais</a> /
+      Aula 02
+    </div>
+
+    <div class="page-header">
+      <h2>Aula 02: Estrutura de Sistemas Computacionais</h2>
+      <div class="info"><span>&#9200; 50 min</span></div>
+    </div>
+
+    <h2>Organização Básica do Computador</h2>
+    <p>Um sistema computacional é composto por:</p>
+    <ul>
+      <li><strong>CPU (Processador):</strong> Executa instruções — busca (fetch), decodifica e executa</li>
+      <li><strong>Memória principal (RAM):</strong> Armazena dados e instruções em execução — volátil</li>
+      <li><strong>Dispositivos de E/S:</strong> Teclado, mouse, monitor, disco, rede</li>
+      <li><strong>Barramento:</strong> Conexão entre os componentes (dados, endereço, controle)</li>
+    </ul>
+
+    <h2>Modos de Operação</h2>
+    <p>Para proteger o sistema, a CPU opera em dois modos:</p>
+    <ul>
+      <li><strong>Modo Kernel (privilegiado):</strong> Acesso total ao hardware. Executa o núcleo do SO.</li>
+      <li><strong>Modo Usuário:</strong> Acesso restrito. Programas do usuário rodam neste modo.</li>
+    </ul>
+
+    <blockquote>
+      Uma instrução privilegiada (ex: alterar registrador de modo, gerenciar memória) só pode ser executada no modo kernel. Se um programa de usuário tentar, ocorre uma exceção (trap).
+    </blockquote>
+
+    <h2>Interrupções</h2>
+    <p>Mecanismo pelo qual o hardware notifica o SO sobre eventos:</p>
+    <ul>
+      <li><strong>Interrupções de hardware:</strong> Dispositivos de E/S, timer</li>
+      <li><strong>Exceptions (traps):</strong> Erros de programa (divisão por zero), system calls</li>
+    </ul>
+    <p>Quando ocorre uma interrupção, a CPU salva o contexto atual, executa o <strong>handler</strong> da interrupção (via tabela de vetores de interrupção), e retorna ao programa interrompido.</p>
+
+    <h2>Chamadas de Sistema (System Calls)</h2>
+    <p>Interface entre os programas do usuário e o kernel. O programa solicita um serviço ao SO:</p>
+    <ul>
+      <li>Manipulação de arquivos (open, read, write, close)</li>
+      <li>Gerência de processos (fork, exec, wait, exit)</li>
+      <li>Comunicação (pipe, shmget, socket)</li>
+      <li>Informações do sistema (getpid, time)</li>
+    </ul>
+
+    <p>Exemplo em C:</p>
+    <pre>#include &lt;unistd.h&gt;
+#include &lt;stdio.h&gt;
+
+int main() {
+    write(STDOUT_FILENO, "Olá, mundo!\n", 12);
+    return 0;
+}</pre>
+    <p>A função <code>write()</code> é uma chamada de sistema que solicita ao kernel que escreva no terminal.</p>
+
+    <h2>Estrutura do Kernel</h2>
+    <ul>
+      <li><strong>Monolítico:</strong> Todo o SO roda no kernel (Linux) — rápido, mas qualquer falha derruba o sistema</li>
+      <li><strong>Micronúcleo:</strong> Kernel mínimo, serviços rodam em espaço de usuário (Minix, QNX) — estável, mas mais lento</li>
+      <li><strong>Híbrido:</strong> Combina ambos (Windows, macOS)</li>
+    </ul>
+
+    <h2>Exercícios</h2>
+    <ol>
+      <li>Explique a diferença entre modo usuário e modo kernel.</li>
+      <li>O que acontece quando um programa faz uma chamada de sistema?</li>
+      <li>Qual a vantagem de um kernel monolítico sobre um micronúcleo? E a desvantagem?</li>
+      <li>Pesquise: o que é o System Call Table no Linux?</li>
+    </ol>
+
+    <div class="nav-aulas">
+      <a href="/profmatheus/disciplinas/sistemas-operacionais/aulas/aula01.html">&larr; Aula anterior</a>
+      <span></span>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">Prof. Matheus &mdash; Análise e Desenvolvimento de Sistemas</div>
+  </footer>
+</body>
+</html>
