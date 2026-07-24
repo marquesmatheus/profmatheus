@@ -11,11 +11,7 @@ function renderDisciplina(data) {
 
     <div class="page-title">
       <h2>${data.title}</h2>
-      <div class="info">
-        <span><i>&#9200;</i> ${data.aulasPorSemana} aulas/semana &mdash; 50 min</span>
-        <span><i>&#128218;</i> ${data.aulas.length} aulas</span>
-        ${data.stack ? `<span><i>&#128736;</i> ${data.stack}</span>` : ''}
-      </div>
+      ${data.stack ? `<div class="info"><span><i>&#128736;</i> ${data.stack}</span></div>` : ''}
     </div>
 
     <div class="disc-nav">

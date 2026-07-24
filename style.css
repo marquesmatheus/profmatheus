@@ -150,15 +150,6 @@ nav a.active { background: var(--primary); color: white; }
   box-shadow: var(--shadow-lg);
 }
 
-.subject-card .badge {
-  font-size: .72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-  color: var(--text-muted);
-  margin-bottom: .5rem;
-}
-
 .subject-card h3 {
   font-size: 1.15rem;
   font-weight: 700;
@@ -171,16 +162,6 @@ nav a.active { background: var(--primary); color: white; }
   color: var(--text-secondary);
   flex: 1;
   line-height: 1.6;
-}
-
-.subject-card .meta {
-  margin-top: 1rem;
-  padding-top: .75rem;
-  border-top: 1px solid var(--border-light);
-  font-size: .82rem;
-  color: var(--text-muted);
-  display: flex;
-  justify-content: space-between;
 }
 
 /* ─── PAGE HEADER ─── */
