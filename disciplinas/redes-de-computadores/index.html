@@ -3,319 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redes de Computadores - Prof. Matheus</title>
+  <title>Redes de Computadores — Prof. Matheus Marques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/profmatheus/style.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1><a href="/profmatheus/">Prof. Matheus</a></h1>
+      <h1><a href="/profmatheus/">Prof. Matheus Marques</a></h1>
       <nav>
-        <a href="/profmatheus/">Início</a>
+        <a href="/profmatheus/">Inicio</a>
         <a href="/profmatheus/disciplinas/sistemas-operacionais/">Sistemas Operacionais</a>
-        <a href="/profmatheus/disciplinas/redes-de-computadores/">Redes</a>
+        <a href="/profmatheus/disciplinas/redes-de-computadores/" class="active">Redes</a>
         <a href="/profmatheus/disciplinas/desenvolvimento-web/">Web</a>
         <a href="/profmatheus/disciplinas/mobile/">Mobile</a>
+        <a href="/profmatheus/materiais/">Materiais</a>
       </nav>
     </div>
   </header>
 
   <div class="container">
-    <div class="breadcrumb">
-      <a href="/profmatheus/">Início</a> / Redes de Computadores
-    </div>
-
-    <div class="page-header">
-      <h2>Redes de Computadores</h2>
-      <div class="info">
-        <span>&#128197; 2 aulas/semana &mdash; 50 min</span>
-        <span>&#128218; Total: 40 aulas &mdash; 20 semanas</span>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 1 &mdash; Introdução às Redes</h3>
-      <div class="aula">
-        <span class="num">1</span>
-        <span class="titulo"><a href="/profmatheus/disciplinas/redes-de-computadores/aulas/aula01.html">Conceitos fundamentais de redes</a></span>
-        <div class="desc">O que é uma rede, histórico, tipos (LAN, MAN, WAN), topologias.</div>
-      </div>
-      <div class="aula">
-        <span class="num">2</span>
-        <span class="titulo">Meios de transmissão</span>
-        <div class="desc">Cabeados (par trançado, coaxial, fibra óptica) e sem fio (rádio, micro-ondas, infravermelho).</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 2 &mdash; Modelos de Referência</h3>
-      <div class="aula">
-        <span class="num">3</span>
-        <span class="titulo">Modelo OSI</span>
-        <div class="desc">As 7 camadas do modelo OSI, funções de cada camada, encapsulamento.</div>
-      </div>
-      <div class="aula">
-        <span class="num">4</span>
-        <span class="titulo">Modelo TCP/IP</span>
-        <div class="desc">As 4 camadas, comparação com OSI, protocolos principais.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 3 &mdash; Camada Física</h3>
-      <div class="aula">
-        <span class="num">5</span>
-        <span class="titulo">Sinais e codificação</span>
-        <div class="desc">Sinais analógicos e digitais, modulação, multiplexação (TDM, FDM).</div>
-      </div>
-      <div class="aula">
-        <span class="num">6</span>
-        <span class="titulo">Equipamentos de rede</span>
-        <div class="desc">Hub, switch, roteador, modem, repetidor, bridge, gateway.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 4 &mdash; Camada de Enlace</h3>
-      <div class="aula">
-        <span class="num">7</span>
-        <span class="titulo">Funções da camada de enlace</span>
-        <div class="desc">Framing, detecção de erros (CRC, paridade), correção de erros (Hamming).</div>
-      </div>
-      <div class="aula">
-        <span class="num">8</span>
-        <span class="titulo">Protocolos de enlace</span>
-        <div class="desc">Ethernet, MAC address, CSMA/CD, switches e bridges.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 5 &mdash; Camada de Rede</h3>
-      <div class="aula">
-        <span class="num">9</span>
-        <span class="titulo">Protocolo IP</span>
-        <div class="desc">IPv4, endereçamento, classes, máscaras, CIDR.</div>
-      </div>
-      <div class="aula">
-        <span class="num">10</span>
-        <span class="titulo">Roteamento</span>
-        <div class="desc">Algoritmos de roteamento (distance vector, link state), RIP, OSPF, BGP.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 6 &mdash; IPv6 e ICMP</h3>
-      <div class="aula">
-        <span class="num">11</span>
-        <span class="titulo">IPv6</span>
-        <div class="desc">Endereçamento IPv6, diferenças para IPv4, transição.</div>
-      </div>
-      <div class="aula">
-        <span class="num">12</span>
-        <span class="titulo">ICMP e ARP</span>
-        <div class="desc">ICMP (ping, traceroute), ARP, DHCP, NAT.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 7 &mdash; Camada de Transporte</h3>
-      <div class="aula">
-        <span class="num">13</span>
-        <span class="titulo">Protocolo UDP</span>
-        <div class="desc">Características, cabeçalho, aplicações (DNS, streaming, VoIP).</div>
-      </div>
-      <div class="aula">
-        <span class="num">14</span>
-        <span class="titulo">Protocolo TCP</span>
-        <div class="desc">Conexão, confiabilidade, controle de fluxo e congestão, handshake.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 8 &mdash; Camada de Aplicação</h3>
-      <div class="aula">
-        <span class="num">15</span>
-        <span class="titulo">HTTP e HTTPS</span>
-        <div class="desc">Requisições/respostas, métodos, códigos de status, cookies, cache.</div>
-      </div>
-      <div class="aula">
-        <span class="num">16</span>
-        <span class="titulo">DNS e SMTP</span>
-        <div class="desc">DNS (domínios, resolução), SMTP, POP3, IMAP.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 9 &mdash; Atividades Práticas</h3>
-      <div class="aula">
-        <span class="num">17</span>
-        <span class="titulo"><a href="/profmatheus/disciplinas/redes-de-computadores/atividades/atividade01.html">Atividade: análise de pacotes com Wireshark</a></span>
-        <div class="desc">Captura e análise de tráfego TCP/IP, filtros, estatísticas.</div>
-      </div>
-      <div class="aula">
-        <span class="num">18</span>
-        <span class="titulo"><strong>Prova 1</strong></span>
-        <div class="desc">Avaliação sobre OSI/TCP-IP, camadas física, enlace, rede e transporte.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 10 &mdash; Segurança em Redes</h3>
-      <div class="aula">
-        <span class="num">19</span>
-        <span class="titulo">Criptografia e autenticação</span>
-        <div class="desc">Simétrica, assimétrica, certificados digitais, TLS/SSL.</div>
-      </div>
-      <div class="aula">
-        <span class="num">20</span>
-        <span class="titulo">Firewalls e VPNs</span>
-        <div class="desc">Tipos de firewall (filtro, proxy, stateful), VPN (IPSec, OpenVPN).</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 11 &mdash; Redes Sem Fio</h3>
-      <div class="aula">
-        <span class="num">21</span>
-        <span class="titulo">Wi-Fi (IEEE 802.11)</span>
-        <div class="desc">Padrões (a/b/g/n/ac/ax), CSMA/CA, segurança WPA2/WPA3.</div>
-      </div>
-      <div class="aula">
-        <span class="num">22</span>
-        <span class="titulo">Redes celulares e IoT</span>
-        <div class="desc">4G, 5G, LoRaWAN, Bluetooth, Zigbee.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 12 &mdash; Redes Definidas por Software</h3>
-      <div class="aula">
-        <span class="num">23</span>
-        <span class="titulo">SDN e OpenFlow</span>
-        <div class="desc">Arquitetura SDN, controlador, plano de dados vs controle.</div>
-      </div>
-      <div class="aula">
-        <span class="num">24</span>
-        <span class="titulo">Virtualização de redes</span>
-        <div class="desc">VLANs, VXLAN, NFV.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 13 &mdash; Qualidade de Serviço</h3>
-      <div class="aula">
-        <span class="num">25</span>
-        <span class="titulo">QoS</span>
-        <div class="desc">Parâmetros (largura de banda, latência, jitter, perda), DiffServ, IntServ.</div>
-      </div>
-      <div class="aula">
-        <span class="num">26</span>
-        <span class="titulo">Multicast e anycast</span>
-        <div class="desc">Endereçamento multicast, IGMP, PIM.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 14 &mdash; Revisão e Prova 2</h3>
-      <div class="aula">
-        <span class="num">27</span>
-        <span class="titulo">Revisão geral</span>
-        <div class="desc">Revisão de aplicação, segurança, redes sem fio.</div>
-      </div>
-      <div class="aula">
-        <span class="num">28</span>
-        <span class="titulo"><strong>Prova 2</strong></span>
-        <div class="desc">Avaliação sobre aplicação, segurança, redes sem fio, SDN.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 15 &mdash; Projeto Prático</h3>
-      <div class="aula">
-        <span class="num">29</span>
-        <span class="titulo">Projeto: montagem de rede</span>
-        <div class="desc">Projeto de uma rede local com switches, roteadores, segmentação de rede.</div>
-      </div>
-      <div class="aula">
-        <span class="num">30</span>
-        <span class="titulo">Projeto: simulação com Packet Tracer</span>
-        <div class="desc">Simulação de roteamento, VLANs, configuração de dispositivos.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 16 &mdash; Projeto Prático (cont.)</h3>
-      <div class="aula">
-        <span class="num">31</span>
-        <span class="titulo">Configuração de servidores</span>
-        <div class="desc">DHCP, DNS, HTTP na prática.</div>
-      </div>
-      <div class="aula">
-        <span class="num">32</span>
-        <span class="titulo">Acompanhamento de projetos</span>
-        <div class="desc">Orientações e dúvidas.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 17 &mdash; Tópicos Avançados</h3>
-      <div class="aula">
-        <span class="num">33</span>
-        <span class="titulo">CDN e edge computing</span>
-        <div class="desc">Content Delivery Networks, computação de borda.</div>
-      </div>
-      <div class="aula">
-        <span class="num">34</span>
-        <span class="titulo">Cloud computing e redes</span>
-        <div class="desc">VPC, subnets, load balancers, AWS/GCP networking.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 18 &mdash; Entrega de Projetos</h3>
-      <div class="aula">
-        <span class="num">35</span>
-        <span class="titulo">Apresentações</span>
-        <div class="desc">Apresentação dos projetos.</div>
-      </div>
-      <div class="aula">
-        <span class="num">36</span>
-        <span class="titulo">Entrega final</span>
-        <div class="desc">Entrega dos relatórios e códigos.</div>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 19 &mdash; Revisão Geral</h3>
-      <div class="aula">
-        <span class="num">37</span>
-        <span class="titulo">Revisão: fundamentos e camadas</span>
-      </div>
-      <div class="aula">
-        <span class="num">38</span>
-        <span class="titulo">Revisão: segurança e tópicos avançados</span>
-      </div>
-    </div>
-
-    <div class="semana">
-      <h3>Semana 20 &mdash; Prova Final</h3>
-      <div class="aula">
-        <span class="num">39</span>
-        <span class="titulo">Exercícios de preparação</span>
-      </div>
-      <div class="aula">
-        <span class="num">40</span>
-        <span class="titulo"><strong>Prova Final</strong></span>
-        <div class="desc">Avaliação de todo o conteúdo do semestre.</div>
-      </div>
-    </div>
-
+    <div id="root"></div>
   </div>
 
   <footer>
-    <div class="container">
-      Prof. Matheus &mdash; Análise e Desenvolvimento de Sistemas
-    </div>
+    <div class="container">Prof. Matheus Marques &mdash; Analise e Desenvolvimento de Sistemas</div>
   </footer>
+
+  <script src="/profmatheus/data/redes.js"></script>
+  <script src="/profmatheus/script.js"></script>
+  <script>renderDisciplina(dadosRedes);</script>
 </body>
 </html>
