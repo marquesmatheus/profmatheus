@@ -37,6 +37,7 @@ function renderDisciplina(data) {
           ${aula.c ? `<div class="bloco conceito"><strong>Conceito</strong>${aula.c}</div>` : ''}
           ${aula.a ? `<div class="bloco atividade"><strong>Atividade</strong>${aula.a}</div>` : ''}
           ${aula.p ? `<div class="bloco pesquisa"><strong>Pesquisa</strong>${aula.p}</div>` : ''}
+          ${aula.req ? `<div class="bloco requisito"><strong>Requisitos</strong>${aula.req}</div>` : ''}
           ${svgHtml}
         </div>
       </div>`;

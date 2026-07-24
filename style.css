@@ -348,6 +348,13 @@ nav a.active { background: var(--primary); color: white; }
 
 .lesson .bloco.pesquisa strong { color: #c2410c; }
 
+.lesson .bloco.requisito {
+  background: #f5f3ff;
+  border: 1px solid #c4b5fd;
+}
+
+.lesson .bloco.requisito strong { color: #6d28d9; }
+
 /* ─── SVG ILLUSTRATION ─── */
 .lesson .svg-box {
   grid-column: 1 / -1;
